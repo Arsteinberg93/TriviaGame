@@ -1,56 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js">
+
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="assets/javascript/app.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="resetsheet" type="text/css" href="asstets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Detroit Sports Trivia</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-
-    <div id="mainScreen">
-        <h1>Detroit Sports Trivia</h1>
-        <br>
-        <h2>You have 45 seconds to answer 5 questions</h2>
-        <br>
-        <p>Click to Begin</p>
-        <button type="button" class="btn btn-primary">Start</button>
+    <div id="splashscreen">
+        <div class="splashBox">
+            <h1>Detroit Sports Trivia!</h1>
+            <hr />
+            <p>You have 45 seconds to guess 5 questions.</p>
+            <br />
+            <button type="button" id="start-btn" class="btn btn-primary black-background white">Start.</button>
+        </div>
     </div>
 
-    <div id="resultScreen">
-        <h2>Results</h2>
-        <br>
-        <p id="Correct">Correct Answers: </p>
-        <p id="Wrong">Wrong Answers: </p>
+    <div id="answerScreen">
+        <div class="splashBox2">
+            <h2></h2>
+            <hr />
+            <p id="correctScreen">Correct Answers: </p>
+            <p id="wrongScreen">Wrong Answers: </p>
+        </div>
     </div>
 
-    <div id="TimesUp">
-        <h2>You're Out of Time!</h2>
-        <br>
-        <p id="timeCorrect">Correct Answers: </p>
-        <p id="timeWrong">Wrong Answers: </p>
-    </div>
 
+    <div id="timesUp">
+        <div class="wrongBox">
+            <h2 class="up"></h2>
+            <hr />
+        </div>
+    </div>
 
     <div class="container">
-        <div class="timeRemaining">Time Remaining:
-            <div id="time-remain">60</div>
+        <header>Detroit Sports Trivia!</header>
+        <div class="row timeRemain">Time Remaining:
+            <div id="time-remain">45</div>
         </div>
 
         <div class="questions">
-            <button type="button" class="btn btn-primary black-background white" id="sub">Submit</button>
+            <button type="button" class="btn btn-primary black-background white" id="sub-but">Submit</button>
+
         </div>
+
     </div>
-
-
+    <script src="assets/javascript/app.js "></script>
 </body>
 
 </html>
