@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="assets/javascript/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="resetsheet" type="text/css" href="asstets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+    <title>Detroit Sports Trivia</title>
+</head>
+
+<body>
+
+    <div id="mainScreen">
+        <h1>Detroit Sports Trivia</h1>
+        <br>
+        <h2>You have 45 seconds to answer 5 questions</h2>
+        <br>
+        <p>Click to Begin</p>
+        <button type="button" class="btn btn-primary">Start</button>
+    </div>
+
+    <div id="resultScreen">
+        <h2>Results</h2>
+        <br>
+        <p id="Correct">Correct Answers: </p>
+        <p id="Wrong">Wrong Answers: </p>
+    </div>
+
+    <div id="TimesUp">
+        <h2>You're Out of Time!</h2>
+        <br>
+        <p id="timeCorrect">Correct Answers: </p>
+        <p id="timeWrong">Wrong Answers: </p>
+    </div>
+
+
+    <div class="container">
+        <div class="timeRemaining">Time Remaining:
+            <div id="time-remain">60</div>
+        </div>
+
+        <div class="questions">
+            <button type="button" class="btn btn-primary black-background white" id="sub">Submit</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
