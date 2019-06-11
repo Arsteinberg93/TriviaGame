@@ -1,0 +1,19 @@
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0000ff;
+    text-align: center;
+    font-display: bold;
+}
+
+body {
+    background-color: orange;
+}
+
+.questions {
+    padding: 15px;
+}
+
+p {
+    color: #0000ff;
+    margin: 15px;
+}

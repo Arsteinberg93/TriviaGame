@@ -71,23 +71,23 @@ var countdown = function(seconds) {
             $('.container').fadeOut(500);
             var correctAnswers = 0;
             var wrongAnswers = 0;
-            var unAnswered = 0;
+
 
             for (var i = 0; i < 5; i++) {
 
                 if ($('input:radio[name="' + questions[i].name + '"]:checked').val() === questions[i].correct) {
 
                     correctAnswers++;
-                    console.log("this is correct! number:" + i)
+                    // console.log("correct: " + i)
                 } else {
                     wrongAnswers++;
-                    console.log("this is wrong! number:" + i)
+                    // console.log("wrong: " + i)
                 };
             }
             $('#correctTimesUp').append(correctAnswers);
 
             $('#wrongTimesUp').append(wrongAnswers);
-            $('#timesUp').fadeIn(1000).show();
+
 
 
             clearInterval(timer);
@@ -104,7 +104,6 @@ var gradeQuiz = $('#sub-but').on('click', function() {
 
     var correctAnswers = 0;
     var wrongAnswers = 0;
-    var unAnswered = 0;
 
     for (var i = 0; i < 5; i++) {
 
